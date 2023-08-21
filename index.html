@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel = "icon" href ="images/title-icon.png">
+    <script src="https://kit.fontawesome.com/ee358fa466.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <div class="logo">
+                    <img src="images/logo.png" alt="logo">
+                </div>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Services</a></li>
+                    <li><a href="#">Portfolio</a></li>
+                    <li><a href="#">Contacts</a></li>
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hy, I'm, <span>Awen</span> <br> from Indonesia</h1>
+            </div>
+        </div>
+    </div>
+    <!-- -------About------------ -->
+    <div class="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="images/user.png">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Dolorem dolorum nesciunt tempore, saepe excepturi quisquam officiis mollitia, impedit aliquam accusantium, labore laudantium suscipit sunt ratione. Velit eos ipsum tempore reiciendis.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="openTab('skills')">Skills</p>
+                        <p class="tab-links" onclick="openTab('experience')">Experience</p>
+                        <p class="tab-links" onclick="openTab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span> <br> Designing Web/App Interfaces</li>
+                            <li><span>Web Development</span> <br> Web App Development</li>
+                            <li><span>App Development</span> <br> Building Android/IOS Apps</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience" >
+                        <ul>
+                            <li><span>2021 - Current</span> <br> UI/UX Design Training at ET Intitute</li>
+                            <li><span>2019 - 2021</span> <br> Team Lead at StarApp LLC.</li>
+                            <li><span>2017 - 2019</span> <br> Internship at Techno's Studio</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2017 - 2021</span> <br> Computer Science at Stmik Bina Bangsa</li>
+                            <li><span>2021 - 2023</span> <br> MBA from MIT Bangalore</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- -------------Services------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-code"></i>
+                    <h2>Web Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio laboriosam voluptatum itaque quia, assumenda architecto ratione consequuntur porro ipsa aperiam! Unde animi cum nostrum velit praesentium dignissimos quos commodi.</p>
+                    <a href="#">read more</a>
+                </div>
+                <div>
+                    <i class="fa-solid fa-crop"></i>
+                    <h2>UI/UX Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio laboriosam voluptatum itaque quia, assumenda architecto ratione consequuntur porro ipsa aperiam! Unde animi cum nostrum velit praesentium dignissimos quos commodi.</p>
+                    <a href="#">read more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store"></i>
+                    <h2>App Design</h2>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Modi odio laboriosam voluptatum itaque quia, assumenda architecto ratione consequuntur porro ipsa aperiam! Unde animi cum nostrum velit praesentium dignissimos quos commodi.</p>
+                    <a href="#">read more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ----------------Portfolio------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="images/work-1.png">
+                    <div class="layer">
+                        <h3>Music Player App</h3>
+                        <p>You can play and download thousands music from this app 
+                            Download it from PlayStore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-2.png">
+                    <div class="layer">
+                        <h3>Social Media App</h3>
+                        <p>The app connects you and the people arround the world. 
+                            Download it from PlayStore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="images/work-3.png">
+                    <div class="layer">
+                        <h3>Shopping App</h3>
+                        <p>The easiest method to get shopping just by click on your smartphone 
+                            Download it from PlayStore.
+                        </p>
+                        <a href="#"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script>
+        var tabLinks = document.getElementsByClassName('tab-links');
+        var tabContents = document.getElementsByClassName('tab-contents');
+        function openTab(tabName)
+        {
+            for (tabLink of tabLinks) {
+                tabLink.classList.remove("active-link")
+            }
+            for (tabContent of tabContents) {
+                tabContent.classList.remove("active-tab")
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabName).classList.add("active-tab");
+        }
+    </script>
+</body>
+</html>
